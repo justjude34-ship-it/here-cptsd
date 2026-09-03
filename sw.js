@@ -1,5 +1,5 @@
 const CACHE = "here-v4";
-const ASSETS = ["./index.html", "./manifest.json", "./icon.svg"];
+const ASSETS = ["./index.html", "./manifest.json", "./icon.svg", "./app.js"];
 self.addEventListener("install", (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(ASSETS)));
   self.skipWaiting();
